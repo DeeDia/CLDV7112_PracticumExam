@@ -1,0 +1,10 @@
+﻿@model List<CLDV7112_PracticumExam.Models.Role>
+
+<h2>Azure SQL connection: successful</h2>
+<p>Roles read from AgriStreamDB:</p>
+<ul>
+    @foreach (var r in Model)
+    {
+        <li>@r.RoleId: @r.RoleName</li>
+    }
+</ul>
